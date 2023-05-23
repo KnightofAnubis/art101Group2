@@ -36,8 +36,8 @@ rooms = {
     hide: {
 	    name: "Baskin Engineering Room 152: Hiding",
 	    description: "You get down in between the row of chairs, covering yourself from the door. Everyone around you does the same. What do you do now?",
-	    exitKeys: ["lights", "silence", "call", "run", "block"],
-	    exitTexts: ["Turn off the lights!", "Silence your phone", "Call a friend.", "RUN!", "Block the door." ]
+	    exitKeys: ["lights", "phone", "run", "block"],
+	    exitTexts: ["Turn off the lights!", "Pick up phone", "RUN!", "Block the door." ]
     },
     run: {
 	    name: "Running",
@@ -56,6 +56,12 @@ rooms = {
     lights: {
 	    name: "Baskin Engineering Room 152: Lights off",
 	    description: "You quickly locate the lights panel and sneak over to turn them off, staying low to the ground. While you wait, what do you do?",
+	    exitKeys: ["silence", "call"],
+	    exitTexts: ["Silence your phone", "Call a friend."]
+    },  
+    phone: {
+	    name: "Baskin Engineering Room 152: Pick up phone",
+	    description: "You take out your phone, what do you do?",
 	    exitKeys: ["silence", "call"],
 	    exitTexts: ["Silence your phone", "Call a friend."]
     },  
