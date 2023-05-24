@@ -57,3 +57,7 @@ ul {
   .title, .description, .exits, p {
     text-align: center;
   }
+  .img {
+    margin: 10px;
+    max-width: 500px;
+  }

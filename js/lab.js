@@ -15,6 +15,7 @@ rooms = {
     },
     start: {
 	    name: "At Baskin Engineering ",
+        img: src="./img/Bench.png",
 	    description: "You arrive at Baskin Enginnering where you are attending a class in room 152. ",
         exitKeys: ["enter"],
 	    exitTexts: ["Enter the building."]
