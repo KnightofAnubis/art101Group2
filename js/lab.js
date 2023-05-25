@@ -7,7 +7,8 @@ rooms = {
     },
     learn: { 
         name: "<b>Baskin Shooting Simulation: Learn More</b>",
-        description: "This project's main goal is to bring awareness to how to deal with school shootings. Running should be option one if possible, but be prepared to hide or fight for your life there is no safe escape route. The \
+        description: "This project's main goal is to bring awareness to how to deal with school shootings. \
+        </br>Running should be option one if possible, but be prepared to hide or fight for your life there is no safe escape route. The \
         location was chosen as University of California, Santa Cruz Baskin Engineering since that is the main building \
         associated with the class this project was designed for. This is a final project for Art 101.",
         exitKeys: ["main"],
@@ -188,7 +189,9 @@ function clearDisplayArea() {
  */
 function displayCurrentRoom(roomObj) {
     display("<p class='title'>" + roomObj.name + "</p>");
-    display("<img src='./img/" + roomObj.image + ".jpg' class='room-image'>");
+    if(roomObj.image){
+        display("<img src='./img/" + roomObj.image + ".jpg' class='room-image'>");
+    }
     display("<p class='description'>" + roomObj.description + "</p>");
 }
 
