@@ -30,8 +30,8 @@ rooms = {
     begin: {
 	    name: "Baskin Engineering Room 152",
 	    description: "You are sitting at a desk about halfway into a lecture when suddely loud gunshots are heard nearby. An announcment echoes around the room. \
-        'There is an active shooter in the building.' You look around \
-        at your fellow students and think about what to do.",
+        'There is an active shooter in the building.' You look around at your fellow students and think about what to do. \
+        <br/> If you hear gunshots or believe it to be gunshots, assume that there is a shooter on campus unless informed otherwise by adminisrators. ",
 	    exitKeys: ["hide", "run", "panic"],
 	    exitTexts: ["Quick hide!", "RUN", "Panic!"]
     },
@@ -57,13 +57,15 @@ rooms = {
     },
     lights: {
 	    name: "Baskin Engineering Room 152: Lights off",
-	    description: "You quickly locate the lights panel and sneak over to turn them off, staying low to the ground. While you wait, what do you do?",
+	    description: "You quickly locate the lights panel and sneak over to turn them off, staying low to the ground. \
+        <br/> If in a room lock down, close blinds, stay away from windows or doors, spread out from others and try to keep cover. \
+        <br/> While you wait, what do you do?",
 	    exitKeys: ["silence", "call"],
 	    exitTexts: ["Silence your phone", "Call a friend."]
     },  
     phone: {
 	    name: "Baskin Engineering Room 152: Pick up phone",
-	    description: "You take out your phone, what do you do?",
+	    description: "You take out your phone, what do you do? If it is safe to do so, call 911. Do not assume that the incident has already been reported", 
 	    exitKeys: ["silence", "call"],
 	    exitTexts: ["Silence your phone", "Call a friend."]
     },  
@@ -109,7 +111,7 @@ rooms = {
     
     weapon: {
         name: "Finding a Weapon",
-        description: "You look around and see a metal water bottle. You grab it.",
+        description: "You look around and see a metal water bottle. You grab it. As a last resort to try to save your life, fight.",
         exitKeys:["listen"],
         exitTexts: ["You listen for footsteps."]
     },
@@ -138,13 +140,13 @@ rooms = {
     
     use: {
         name: "Using a weapon", //default is unarmed
-        description: "You leap out and attack the shoot catching them off guard. Around you other students jump up and help disarm the shooter.",
+        description: "You leap out and attack the shoot catching them off guard. Around you other students jump up and help disarm the shooter. Unless you have no other choice, do not approach the shooter and if appraoched by shooter comply with the shooter's instructions.",
         exitKeys: ["finish2"],
         exitTexts: ["It's over..."]
     },
     finish: {
         name: "Police.",
-        description: "You make your way to the police blockade. They ask you if you're okay and what you know about what happened. \
+        description: "You make your way to the police blockade. When law enforcment reaches you, do not run or make any sudden movements and wait for their instruction. They ask you if you're okay and what you know about what happened. \
         They sit you down and let the shock wear off. You are given the numbers of trauma counselors and websites to help deal with what just happened.",
     //list of helpful resources??? 
     },
@@ -152,7 +154,7 @@ rooms = {
     finish2: {
         name: "Police.",
         description: "While you and other students keep the shoot incapacitated another calls the police. They storm the building and quickly \
-        find your class room. 'We can take it from here.' They say, gesturing for you all to leave.",
+        find your class room. Law enforcment will need to identify that you are not the shooter, be quiet and compliant. 'We can take it from here.' They say, gesturing for you all to leave.",
         exitKeys: ["finish"],
         exitTexts: ["You make your way out..."] 
     },
