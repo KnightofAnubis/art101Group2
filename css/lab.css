@@ -1,14 +1,16 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 body {
-  margin-left: 200px;
-  margin-right: 200px;
-  background-color: #faa7c5;
+  background-image: url("img/abc.jpg");
+  background-repeat: no-repeat;
+  background-size : 1550px;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: 'comic sans';
-  color:#1c034a
+  font-family: 'Lucida Sans Unicode';
+  text-align: center;
+  color:#1d1d1d
+  
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -22,7 +24,6 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  
   background-color: #1fe4fe;
 }
 
@@ -47,29 +48,18 @@ ul {
     background-color: #ffffff;
   }
   #js-output {
-    padding: 10px;
+    padding: 30px;
     margin-top: 50px;
     margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: solid 1px #000000;
-    background-color: #ffffff;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: solid 0px #000000;
+    background-color: #ffffffda;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 175%;
   }
 
-  .title, .description, .exitkeys, p {
+  .title, .description, .exits, p {
     text-align: center;
   }
-  .room-image {
-    /*margin: 10px;
-    max-width: 500px;*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .exits{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+
