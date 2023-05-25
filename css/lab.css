@@ -1,5 +1,7 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 body {
+  margin-left: 200px;
+  margin-right: 200px;
   background-color: #faa7c5;
 }
 
@@ -54,10 +56,20 @@ ul {
     background-color: #ffffff;
   }
 
-  .title, .description, .exits, p {
+  .title, .description, .exitkeys, p {
     text-align: center;
   }
-  .img {
-    margin: 10px;
-    max-width: 500px;
+  .room-image {
+    /*margin: 10px;
+    max-width: 500px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .exits{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }

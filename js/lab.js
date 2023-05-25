@@ -15,7 +15,7 @@ rooms = {
     },
     start: {
 	    name: "At Baskin Engineering ",
-        img: src="./img/Bench.png",
+        image: "Bench",
 	    description: "You arrive at Baskin Enginnering where you are attending a class in room 152. ",
         exitKeys: ["enter"],
 	    exitTexts: ["Enter the building."]
@@ -188,6 +188,7 @@ function clearDisplayArea() {
  */
 function displayCurrentRoom(roomObj) {
     display("<p class='title'>" + roomObj.name + "</p>");
+    display("<img src='./img/" + roomObj.image + ".jpg' class='room-image'>");
     display("<p class='description'>" + roomObj.description + "</p>");
 }
 
@@ -203,7 +204,7 @@ function displayCurrentExits(roomObj) {
         /* We want the HTML to look like this:
               <li><a onClick='javascript:newRoom("exitKey")'>Exit text</a></li>
         */
-        exitHTML = "<li onClick='javascript:newRoom(\"" + 
+        exitHTML = "<li class='exitkeys' onClick='javascript:newRoom(\"" + 
                 roomObj.exitKeys[i] + "\")'>" + roomObj.exitTexts[i] + "</li>";
         display(exitHTML);
     }
