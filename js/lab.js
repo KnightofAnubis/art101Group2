@@ -3,7 +3,7 @@ rooms = {
         name: "<h1><b>Baskin Shooting Simulation</b></h1>",
         description: "<br>This is a simulation of a school shooting based in the University of Santa Cruz. This simulation will take you though choices on how to be prepared in advance for the best chances of survival.",
         exitKeys: ["start", "learn"],
-        exitTexts: ["Start",  "Learn More"]
+        exitTexts: ["<b>Start</b>",  "<b>Learn More</b>"]
     },
     learn: { 
         name: "<h2><b>Baskin Shooting Simulation: Learn More</b></h2>",
