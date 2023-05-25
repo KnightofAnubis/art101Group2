@@ -209,8 +209,8 @@ function displayCurrentExits(roomObj) {
         /* We want the HTML to look like this:
               <li><a onClick='javascript:newRoom("exitKey")'>Exit text</a></li>
         */
-        exitHTML = "<li class='exitkeys' onClick='javascript:newRoom(\"" + 
-                roomObj.exitKeys[i] + "\")'>" + roomObj.exitTexts[i] + "</li>";
+        exitHTML = "<button class='exitkeys' onClick='javascript:newRoom(\"" + 
+                roomObj.exitKeys[i] + "\")'>" + roomObj.exitTexts[i] + "</button>";
         display(exitHTML);
     }
     display("</ul>");

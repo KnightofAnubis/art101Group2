@@ -63,7 +63,7 @@ ul {
     font-size: 175%;
   }
 
-  .title, .description, .exitkeys, p {
+  .title, .description, p {
     text-align: center;
   }
 
@@ -75,7 +75,7 @@ ul {
     margin-right: auto;
     width: 35%;
   }
-  .exits{
+  .exits, .exitkeys{
     display: block;
     margin-left: auto;
     margin-right: auto;
