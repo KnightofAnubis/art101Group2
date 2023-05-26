@@ -23,12 +23,14 @@ rooms = {
     },
     enter: {
 	    name: "<h2><b>Inside Baskin Engineering</b></h2>",
+        image: "cafe",
 	    description: "<br>Opening the doors of the building you walk past the cafe, smelling the freshly brewed coffee and enter into the classroom.",
         exitKeys: ["begin"],
 	    exitTexts: ["Walk into class."]
     },
     begin: {
 	    name: "<h2><b>Baskin Engineering Room 152</b></h2>",
+        image: "lecture",
 	    description: "<br>You are sitting at a desk about halfway into a lecture when suddely loud gunshots are heard nearby. An announcment echoes around the room. \
         'There is an active shooter in the building.' You look around at your fellow students and think about what to do. \
         <br/> If you hear gunshots or believe it to be gunshots, assume that there is a shooter on campus unless informed otherwise by adminisrators. ",
@@ -37,6 +39,7 @@ rooms = {
     },
     hide: {
 	    name: "<h2><b>Baskin Engineering Room 152: Hiding</b></h2>",
+        image: "hide",
 	    description: "<br>You get down in between the row of chairs, covering yourself from the door. Everyone around you does the same. What do you do now?",
 	    exitKeys: ["lights", "phone", "run", "block"],
 	    exitTexts: ["Turn off the lights!", "Pick up phone", "RUN!", "Block the door." ]
