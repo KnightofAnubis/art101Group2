@@ -3,7 +3,7 @@ rooms = {
         name: "<h1><b>Baskin Shooting Simulation</b></h1>",
         description: "<br>This is a simulation of a school shooting based in the University of Santa Cruz. This simulation will take you though choices on how to be prepared in advance for the best chances of survival.",
         exitKeys: ["start", "learn"],
-        exitTexts: ["Start",  "Learn More"]
+        exitTexts: ["<b>Start</b>",  "<b>Learn More</b>"]
     },
     learn: { 
         name: "<h2><b>Baskin Shooting Simulation: Learn More</b></h2>",
@@ -212,8 +212,8 @@ function displayCurrentExits(roomObj) {
         /* We want the HTML to look like this:
               <li><a onClick='javascript:newRoom("exitKey")'>Exit text</a></li>
         */
-        exitHTML = "<li class='exitkeys' onClick='javascript:newRoom(\"" + 
-                roomObj.exitKeys[i] + "\")'>" + roomObj.exitTexts[i] + "</li>";
+        exitHTML = "<button class='exitkeys' onClick='javascript:newRoom(\"" + 
+                roomObj.exitKeys[i] + "\")'>" + roomObj.exitTexts[i] + "</button>";
         display(exitHTML);
     }
     display("</ul>");
