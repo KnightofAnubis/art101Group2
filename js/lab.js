@@ -46,6 +46,7 @@ rooms = {
     },
     run: {
 	    name: "<h2><b>Running</b></h2>",
+        image: "run",
 	    description: "<br>You panic, not wanting to be caught and make a run for it! Running to a safe zone should be priorty, but without knowing the location of the shooter, this could put you in sight of danger. \
         In this event, if escape is not possible hide. You want to shelter in place because you have no confirmation that the shooter won't see you. Without \
         knowing the location of the shooter the option to run is more dangerous than staying in place.",
@@ -54,12 +55,14 @@ rooms = {
     },
     panic: {
 	    name: "<h2><b>Baskin Engineering Room 152: Panicking</b></h2>",
+        image: "panic",
 	    description: "<br>You feel your chest tighten in fear. Looking around you see several people hide while a few make a run for the door.",
 	    exitKeys: ["run", "hide"],
 	    exitTexts: ["Go with the runners.", "Hide."]
     },
     lights: {
 	    name: "<h2><b>Baskin Engineering Room 152: Lights off</b></h2>",
+        image: "lights",
 	    description: "<br>You quickly locate the lights panel and sneak over to turn them off, staying low to the ground. \
         <br/> If in a room lock down, close blinds, stay away from windows or doors, spread out from others and try to keep cover. \
         <br/> While you wait, what do you do?",
