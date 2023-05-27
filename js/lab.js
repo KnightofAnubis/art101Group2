@@ -68,12 +68,14 @@ rooms = {
     },  
     phone: {
 	    name: "<h2><b>Baskin Engineering Room 152: Pick up phone</b></h2>",
+        image: "phone",
 	    description: "<br>You take out your phone, what do you do? If it is safe to do so, call 911. Do not assume that the incident has already been reported", 
 	    exitKeys: ["silence", "call"],
 	    exitTexts: ["Silence your phone", "Call a friend."]
     },  
     silence: {
 	    name: "<h2><b>Baskin Engineering Room 152: Silence your phone</b></h2>",
+        image: "silence",
 	    description: "<br>You quickly silence your phone and gesture to others to do the same. It would be bad to alert to the shooter that people were in the room.",
 	    exitKeys: ["footsteps", "remind"],
 	    exitTexts: ["Listen for footsteps.", "Remind others near you to silence their phones."]
@@ -81,6 +83,7 @@ rooms = {
     },
     call: {
         name: "<h2><b>Baskin Engineering Room 152: Call a friend</b></h2>",
+        image: "call",
 	    description: "<br>It is understandable to want to call someone and let them know what is happening, but it is safer to remain silent and not make noise while hiding.",
 	    exitKeys: ["silence"],
 	    exitTexts: ["Please, silence your phone."]
@@ -100,6 +103,7 @@ rooms = {
     },
     remind: {
         name: "<h2><b>Baskin Engineering Room 152: Reminder...</b></h2>",
+        image: "remind",
         description: "<br>You whisper to the person next to you, 'hey, silence your phone.' They nod and pass on the message.",
         exitKeys: ["listen", "weapon" ],
         exitTexts: ["Listen for footsteps.", "Look around for a weapon."]
