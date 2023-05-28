@@ -93,12 +93,14 @@ rooms = {
     },
     block: {
         name: "<h2><b>Baskin Engineering Room 152: Block the door</b></h2>",
+        image: "block",
 	    description: "<br>You block the door with desks and chairs to deter the shooting. When hiding you should lock and baricade doors with furniture if possible.",
 	    exitKeys: ["hide"],
 	    exitTexts: ["Continue hiding."]
     },
     footsteps: {
         name: "<h2><b>Baskin Engineering Room 152: Listening...</b></h2>",
+        image: "listening",
         description: "<br>You stay quiet and listen… You hear gunshots somewhere above you and the sound of running in the hallway outside the door. \
         You think for a moment if you should try to make a run for it while believing the shooter is on the level above you. Evacuate if possible if deemed safe to do so away from the sound of the shooting to a safe zone.",
         exitKeys: ["run2", "stay"], 
