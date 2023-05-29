@@ -161,6 +161,13 @@ rooms = {
         description: "<br>You make your way to the police blockade. When law enforcment reaches you, do not run or make any sudden movements and wait for their instruction. They ask you if you're okay and what you know about what happened. \
         They sit you down and let the shock wear off. You are given the numbers of trauma counselors and websites to help deal with what just happened.",
     //list of helpful resources??? 
+        linkTexts: ["The NCTSN (National Child Traumatic Stress Network) helps provide resources for parents and caregivers on how to help their children get through the aftermath of traumatic events such as school shootings.", "The \
+        American School Counselor Association also has many different resources to help students. As well as tips for parents to follow.", "Another resource is the American Psychological Association for tips on how to get children to\
+        comprehend what just happened and move forward. This is geared towards mass shootings in general.", "youth.gov is the U.S. government website that helps you create, maintain, and strengthen effective youth programs. Included are youth facts, \
+        funding information, and tools to help you assess community assets, generate maps of local and federal resources, search for evidence-based youth programs, and keep up-to-date on the latest, youth-related news. The following link is to their page\
+         providing resources for mass shootings."],
+        links: ["https://www.nctsn.org/what-is-child-trauma/trauma-types/terrorism-and-violence/school-shooting-resources", "https://www.schoolcounselor.org/Publications-Research/Publications/Free-ASCA-Resources/After-a-School-Shooting","\
+        https://www.apa.org/topics/gun-violence-crime/mass-shooting-resources", "https://youth.gov/feature-article/resources-help-youth-cope-after-mass-shooting"]
     },
     
     finish2: {
@@ -207,8 +214,25 @@ function displayCurrentRoom(roomObj) {
         display("<img src='./img/" + roomObj.image + ".jpg' class='room-image'>");
     }
     display("<p class='description'>" + roomObj.description + "</p>");
+
 }
 
+/*
+ * Display current links
+ * Parameters: Takes a room object
+ */
+function displayCurrentLinks(roomObj) {
+    // loop over all the exitKeys for this room
+    if(roomObj.linkTexts){
+        display("<p>Resources: </p><ul>");
+        for(i=0; i<roomObj.links.length; i++) {
+
+            linkHTML = `<a class= 'links' href= ${roomObj.links[i]}>` + roomObj.linkTexts[i] + "</a>";
+            display(linkHTML);
+        }
+        display("</ul>");
+    }
+}
 
 /*
  * Display current exitKeys
@@ -233,6 +257,7 @@ function newRoom(nextRoom) {
     currentRoomObj = rooms[currentRoom];
     clearDisplayArea();
     displayCurrentRoom(currentRoomObj);
+    displayCurrentLinks(currentRoomObj);
     if(currentRoom != "finish"){
         displayCurrentExits(currentRoomObj);
     }

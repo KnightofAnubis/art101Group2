@@ -102,3 +102,14 @@ ul {
     box-shadow: 0 0 0 4px #1d1d1d;
     transition: 0.4s;
   }
+
+  .links, .linkTexts {
+    display: block;
+    border: none;
+    background-color: #9797976c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
