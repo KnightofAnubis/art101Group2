@@ -123,6 +123,7 @@ rooms = {
     
     weapon: {
         name: "<h2><b>Finding a Weapon</b></h2>",
+        image: "weapon",
         description: "<br>You look around and see a metal water bottle. You grab it. As a last resort to try to save your life, fight.",
         exitKeys:["listen"],
         exitTexts: ["You listen for footsteps."]
