@@ -17,7 +17,7 @@ rooms = {
     start: {
 	    name: "<h2><b>At Baskin Engineering</b></h2>",
         image: "Bench",
-	    description: "<br>You arrive at Baskin Enginnering where you are attending a class in room 152. ",
+	    description: "<br>You arrive at Baskin Engineering where you are attending a class in room 152. ",
         exitKeys: ["enter"],
 	    exitTexts: ["Enter the building."]
     },
@@ -66,8 +66,8 @@ rooms = {
 	    description: "<br>You quickly locate the lights panel and sneak over to turn them off, staying low to the ground. \
         <br/> If in a room lock down, close blinds, stay away from windows or doors, spread out from others and try to keep cover. \
         <br/> While you wait, what do you do?",
-	    exitKeys: ["silence", "call"],
-	    exitTexts: ["Silence your phone", "Call a friend."]
+	    exitKeys: ["silence", "call", "phone"],
+	    exitTexts: ["Silence your phone", "Call a friend.", "Report the shooting."]
     },  
     phone: {
 	    name: "<h2><b>Baskin Engineering Room 152: Pick up phone</b></h2>",
@@ -95,7 +95,7 @@ rooms = {
         name: "<h2><b>Baskin Engineering Room 152: Block the door</b></h2>",
         image: "block",
 	    description: "<br>You block the door with desks and chairs to deter the shooting. When hiding you should lock and baricade doors with furniture if possible.",
-	    exitKeys: ["hide"],
+	    exitKeys: ["hide"], //adding different ending?
 	    exitTexts: ["Continue hiding."]
     },
     footsteps: {
@@ -113,6 +113,7 @@ rooms = {
         exitKeys: ["listen", "weapon" ],
         exitTexts: ["Listen for footsteps.", "Look around for a weapon."]
     },
+    //needs changing...
     listen: {
         name: "<h2><b>Baskin Engineering Room 152: Listening…</b></h2>",
         description: "<br>You listen closely, flinching when you hear the sound of gunshots in the hallway outside the room. You can feel your heartbeat \
@@ -120,7 +121,7 @@ rooms = {
         exitKeys: ["stay2", "use", "use"],
         exitTexts: ["Stay hidden.", "Use weapon.", "Try to grab the shooter"], 
     },
-    
+    //needs changing...
     weapon: {
         name: "<h2><b>Finding a Weapon</b></h2>",
         image: "weapon",
@@ -128,6 +129,7 @@ rooms = {
         exitKeys:["listen"],
         exitTexts: ["You listen for footsteps."]
     },
+    //needs changing...
     stay2: {
         name: "<h2><b>Staying hidden. Not the right choice.</b></h2>",
         description: "<br>There are three main choices when dealing with a school shooter: hide, run, or fight. In this instance you would want to try and \
@@ -150,7 +152,7 @@ rooms = {
         exitTexts: ["You are safe."]
     },
     
-    
+    //need changing...
     use: {
         name: "<h2><b>Using a weapon</b></h2>", //default is unarmed
         description: "<br>You leap out and attack the shoot catching them off guard. Around you other students jump up and help disarm the shooter. Unless you have no other choice, do not approach the shooter and if appraoched by shooter comply with the shooter's instructions.",
@@ -170,7 +172,7 @@ rooms = {
         links: ["https://www.nctsn.org/what-is-child-trauma/trauma-types/terrorism-and-violence/school-shooting-resources", "https://www.schoolcounselor.org/Publications-Research/Publications/Free-ASCA-Resources/After-a-School-Shooting","\
         https://www.apa.org/topics/gun-violence-crime/mass-shooting-resources", "https://youth.gov/feature-article/resources-help-youth-cope-after-mass-shooting"]
     },
-    
+    //need changing...
     finish2: {
         name: "<h2><b>Police.</b></h2>",
         description: "<br>While you and other students keep the shoot incapacitated another calls the police. They storm the building and quickly \
