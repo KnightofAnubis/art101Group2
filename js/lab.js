@@ -116,6 +116,7 @@ rooms = {
     //needs changing...
     listen: {
         name: "<h2><b>Baskin Engineering Room 152: Listening…</b></h2>",
+        image: "footsteps",
         description: "<br>You listen closely, flinching when you hear the sound of gunshots in the hallway outside the room. You can feel your heartbeat \
          speed up as footsteps get closer. There is a moment when the footsteps stop… light enters the room.",
         exitKeys: ["stay2", "use", "use"],
@@ -155,7 +156,8 @@ rooms = {
     //need changing...
     use: {
         name: "<h2><b>Using a weapon</b></h2>", //default is unarmed
-        description: "<br>You leap out and attack the shoot catching them off guard. Around you other students jump up and help disarm the shooter. Unless you have no other choice, do not approach the shooter and if appraoched by shooter comply with the shooter's instructions.",
+        image: "fight",
+        description: "<br>You leap out and attack the shooter catching them off guard. Around you other students jump up and help disarm the shooter. Unless you have no other choice, do not approach the shooter and if appraoched by shooter comply with the shooter's instructions.",
         exitKeys: ["finish2"],
         exitTexts: ["It's over..."]
     },
