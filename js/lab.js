@@ -133,6 +133,7 @@ rooms = {
     //needs changing...
     stay2: {
         name: "<h2><b>Staying hidden. Not the right choice.</b></h2>",
+        image: "StayingHidden",
         description: "<br>There are three main choices when dealing with a school shooter: hide, run, or fight. In this instance you would want to try and \
         catch the shooter off guard and fight instead of staying hidden as the shooter has already discovered your hiding place.",
         exitKeys: ["listen"],
