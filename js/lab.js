@@ -141,6 +141,7 @@ rooms = {
     },
     run2: {
         name: "<h2><b>Running…</b></h2>",
+        image: "building",
         description: "<br>Now that you know the shooter is above you, you make your way to the door and run for the exit. You make it and once outside \
          you creep off into the forest out of sight of the second floor windows.",
         exitKeys: ["finish"],
@@ -148,6 +149,7 @@ rooms = {
     },
     stay: {
         name: "<h2><b>Staying put.</b></h2>",
+        image: "stay",
         description: "<br>Not wanting to risk it you stay put and wait it out. You don't know how much time has passed while you try to stay quiet and calm. \
         It isn't till you hear 'The shooter has been neutralized, everyone is safe to leave the building.' that you breathe a sigh of relief.", 
         exitKeys: ["finish"],
@@ -164,6 +166,7 @@ rooms = {
     },
     finish: {
         name: "<h2><b>Police.</b></h2>",
+        image: "police",
         description: "<br>You make your way to the police blockade. When law enforcment reaches you, do not run or make any sudden movements and wait for their instruction. They ask you if you're okay and what you know about what happened. \
         They sit you down and let the shock wear off. You are given the numbers of trauma counselors and websites to help deal with what just happened.",
     //list of helpful resources??? 
@@ -178,7 +181,8 @@ rooms = {
     //need changing...
     finish2: {
         name: "<h2><b>Police.</b></h2>",
-        description: "<br>While you and other students keep the shoot incapacitated another calls the police. They storm the building and quickly \
+        image: "finish2",
+        description: "<br>While you and other students keep the shooter incapacitated another calls the police. They storm the building and quickly \
         find your class room. Law enforcment will need to identify that you are not the shooter, be quiet and compliant. 'We can take it from here.' They say, gesturing for you all to leave.",
         exitKeys: ["finish"],
         exitTexts: ["You make your way out..."] 
