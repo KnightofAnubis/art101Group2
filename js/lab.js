@@ -1,7 +1,7 @@
 rooms = {
     main: {
         name: "<h1><b>Baskin Shooting Simulation</b></h1>",
-        description: "<br><b>This is a simulation of a school shooting based in the University of Santa Cruz. This simulation will take you though choices on how to be prepared in advance for the best chances of survival.</b>",
+        description: "<br>This is a simulation of a school shooting based in the University of Santa Cruz. This simulation will take you though choices on how to be prepared in advance for the best chances of survival.",
         exitKeys: ["start", "learn"],
         exitTexts: ["<b>Start</b>",  "<b>Learn More</b>"]
     },
@@ -250,7 +250,7 @@ function displayCurrentLinks(roomObj) {
  */
 function displayCurrentExits(roomObj) {
     // loop over all the exitKeys for this room
-    display("<p>Choose your next move:</p><ul class='exits'>");
+    display("<p><br>Choose your next move:</p><ul class='exits'>");
     for(i=0; i<roomObj.exitKeys.length; i++) {
         /* We want the HTML to look like this:
               <li><a onClick='javascript:newRoom("exitKey")'>Exit text</a></li>
