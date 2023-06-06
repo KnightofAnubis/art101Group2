@@ -225,7 +225,7 @@ var lastRoom = 20;
     Parameters: string to display
  */
 function display(string) {
-    var element = $("#js-output");
+    var element = $("#info");
     element.html(`${element.html() + string}`);
     
 }
@@ -234,7 +234,7 @@ function display(string) {
  * Clear display area
  */
 function clearDisplayArea() {
-    $("#js-output").html("");
+    $("#info").html("");
 }
 
 /*
@@ -280,6 +280,7 @@ function displayCurrentExits(roomObj) {
         */
         exitHTML = "<button class='exitkeys' onClick='javascript:newRoom(\"" + 
                 roomObj.exitKeys[i] + "\")'>" + roomObj.exitTexts[i] + "</button>";
+                
         display(exitHTML);
     }
     display("</ul>");
@@ -295,6 +296,11 @@ function newRoom(nextRoom) {
         if(currentRoom != "finish3"){
             displayCurrentExits(currentRoomObj);
         }
+    }
+    if(currentRoom == "lights"){
+        console.log("yes");
+        $("#js-output").css("color", "white");
+        $("#js-output").css("background-color", "black");
     }
 }
 // we need to wait until the webpage is loaded before we display room 1
