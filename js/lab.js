@@ -56,7 +56,8 @@ rooms = {
     panic: {
 	    name: "<h2><b>Baskin Engineering Room 152: Panicking</b></h2>",
         image: "panic",
-	    description: "<br>You feel your chest tighten in fear. Looking around you see several people hide while a few make a run for the door.",
+	    description: "<br>You feel your chest tighten in fear. Looking around you see several people hide while a few make a run for the door.\
+        During a stressful situation use breathing techniques, breath in through the nose and out through the mouth to restore calmness.",
 	    exitKeys: ["run", "hide"],
 	    exitTexts: ["Go with the runners.", "Hide."]
     },
