@@ -302,6 +302,7 @@ function newRoom(nextRoom) {
         console.log("yes");
         $("#js-output").css("color", "white");
         $("#js-output").css("background-color", "black");
+        $(".exitkeys").css("color", "black");
     }
 }
 // we need to wait until the webpage is loaded before we display room 1
