@@ -95,8 +95,31 @@ rooms = {
         name: "<h2><b>Baskin Engineering Room 152: Block the door</b></h2>",
         image: "block",
 	    description: "<br>You block the door with desks and chairs to deter the shooting. When hiding you should lock and baricade doors with furniture if possible.",
-	    exitKeys: ["hide"], //adding different ending?
+	    exitKeys: ["wait"], //adding different endings since it goes backwards so new short story line here
 	    exitTexts: ["Continue hiding."]
+    },
+    wait: {
+        name: "<h2><b>Baskin Engineering Room 152: Waiting</b></h2>",
+        image: "listening",
+	    description: "<br>You wait in silence with the other students as you hear footsteps and runing down the hallway outside. This is followed by loud shots. You have no idea what is happening, but you know it is safer\
+        to stay put now that the door is locked and block. You wait for an all clear by the first responders.",
+	    exitKeys: ["finish3"], //adding different endings since it goes backwards so new short story line here
+	    exitTexts: ["All Clear."]
+    },
+    finish3: {
+        name: "<h2><b>Police.</b></h2>",
+        image: "police",
+        description: "<br>After an unknown amount of time you hear a loud announcment 'This is an all clear call, the shooter has been neutralized. All remaining students and staff left in the building please evacuated now.'\
+         You make your way to the police blockade. They ask you if you're okay and what you know about what happened. \
+        They sit you down and let the shock wear off. You are given the numbers of trauma counselors and websites to help deal with what just happened.",
+    //list of helpful resources??? 
+        linkTexts: ["The NCTSN (National Child Traumatic Stress Network) helps provide resources for parents and caregivers on how to help their children get through the aftermath of traumatic events such as school shootings.", "The \
+        American School Counselor Association also has many different resources to help students. As well as tips for parents to follow.", "Another resource is the American Psychological Association for tips on how to get children to\
+        comprehend what just happened and move forward. This is geared towards mass shootings in general.", "youth.gov is the U.S. government website that helps you create, maintain, and strengthen effective youth programs. Included are youth facts, \
+        funding information, and tools to help you assess community assets, generate maps of local and federal resources, search for evidence-based youth programs, and keep up-to-date on the latest, youth-related news. The following link is to their page\
+         providing resources for mass shootings."],
+        links: ["https://www.nctsn.org/what-is-child-trauma/trauma-types/terrorism-and-violence/school-shooting-resources", "https://www.schoolcounselor.org/Publications-Research/Publications/Free-ASCA-Resources/After-a-School-Shooting","\
+        https://www.apa.org/topics/gun-violence-crime/mass-shooting-resources", "https://youth.gov/feature-article/resources-help-youth-cope-after-mass-shooting"]
     },
     footsteps: {
         name: "<h2><b>Baskin Engineering Room 152: Listening...</b></h2>",
@@ -269,7 +292,9 @@ function newRoom(nextRoom) {
     displayCurrentRoom(currentRoomObj);
     displayCurrentLinks(currentRoomObj);
     if(currentRoom != "finish"){
-        displayCurrentExits(currentRoomObj);
+        if(currentRoom != "finish3"){
+            displayCurrentExits(currentRoomObj);
+        }
     }
 }
 // we need to wait until the webpage is loaded before we display room 1
