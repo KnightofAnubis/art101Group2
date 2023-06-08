@@ -1,7 +1,7 @@
 rooms = {
     main: {
         name: "<h1><b>Baskin Shooting Simulation</b></h1>",
-        description: "<br>This is a simulation of a school shooting based in the University of Santa Cruz. This simulation will take you though choices on how to be prepared in advance for the best chances of survival.",
+        description: "<br>This is a simulation of a school shooting based in the University of Santa Cruz. This simulation will take you through choices on how to be prepared in advance for the best chances of survival.",
         exitKeys: ["start", "learn"],
         exitTexts: ["<b>Start</b>",  "<b>Learn More</b>"]
     },
@@ -31,9 +31,9 @@ rooms = {
     begin: {
 	    name: "<h2><b>Baskin Engineering Room 152</b></h2>",
         image: "lecture",
-	    description: "<br>You are sitting at a desk about halfway into a lecture when suddely loud gunshots are heard nearby. An announcment echoes around the room. \
+	    description: "<br>You are sitting at a desk about halfway into a lecture when suddenly loud gunshots are heard nearby. An announcement echoes around the room. \
         'There is an active shooter in the building.' You look around at your fellow students and think about what to do. \
-        <br/> If you hear gunshots or believe it to be gunshots, assume that there is a shooter on campus unless informed otherwise by adminisrators. ",
+        <br/> If you hear gunshots or believe it to be gunshots, assume that there is a shooter on campus unless informed otherwise by administrators. ",
 	    exitKeys: ["hide", "run", "panic"],
 	    exitTexts: ["Quick hide!", "RUN", "Panic!"]
     },
@@ -47,8 +47,8 @@ rooms = {
     run: {
 	    name: "<h2><b>Running</b></h2>",
         image: "run",
-	    description: "<br>You panic, not wanting to be caught and make a run for it! Running to a safe zone should be priorty, but without knowing the location of the shooter, this could put you in sight of danger. \
-        In this event, if escape is not possible hide. You want to shelter in place because you have no confirmation that the shooter won't see you. Without \
+	    description: "<br>You panic, not wanting to be caught and make a run for it! Running to a safe zone should be a priority, but without knowing the location of the shooter, this could put you in sight of danger. \
+        In this event, if escape is not possible, hide. You want to shelter in place because you have no confirmation that the shooter won't see you. Without \
         knowing the location of the shooter the option to run is more dangerous than staying in place.",
 	    exitKeys: ["begin"],
 	    exitTexts: ["Return to Room 152"]
@@ -65,7 +65,7 @@ rooms = {
 	    name: "<h2><b>Baskin Engineering Room 152: Lights off</b></h2>",
         image: "lights",
 	    description: "<br>You quickly locate the lights panel and sneak over to turn them off, staying low to the ground. \
-        <br/> If in a room lock down, close blinds, stay away from windows or doors, spread out from others and try to keep cover. \
+        <br/> If in a room, lock the door, close the blinds, stay away from windows or doors, and spread out from others and try to keep cover. \
         <br/> While you wait, what do you do?",
 	    exitKeys: ["silence", "call", "phone"],
 	    exitTexts: ["Silence your phone", "Call a friend.", "Report the shooting."]
@@ -95,22 +95,22 @@ rooms = {
     block: {
         name: "<h2><b>Baskin Engineering Room 152: Block the door</b></h2>",
         image: "block",
-	    description: "<br>You block the door with desks and chairs to deter the shooting. When hiding you should lock and baricade doors with furniture if possible.",
+	    description: "<br>You block the door with desks and chairs to deter the shooting. When hiding you should lock and barricade doors with furniture if possible.",
 	    exitKeys: ["wait"], //adding different endings since it goes backwards so new short story line here
 	    exitTexts: ["Continue hiding."]
     },
     wait: {
         name: "<h2><b>Baskin Engineering Room 152: Waiting</b></h2>",
         image: "listening",
-	    description: "<br>You wait in silence with the other students as you hear footsteps and runing down the hallway outside. This is followed by loud shots. You have no idea what is happening, but you know it is safer\
-        to stay put now that the door is locked and block. You wait for an all clear by the first responders.",
+	    description: "<br>You wait in silence with the other students as you hear footsteps and running down the hallway outside. This is followed by loud shots. You have no idea what is happening, but you know it is safer\
+        to stay put now that the door is locked and blocked. You wait for an all clear by the first responders.",
 	    exitKeys: ["finish3"], //adding different endings since it goes backwards so new short story line here
 	    exitTexts: ["All Clear."]
     },
     finish3: {
         name: "<h2><b>Police.</b></h2>",
         image: "police",
-        description: "<br>After an unknown amount of time you hear a loud announcment 'This is an all clear call, the shooter has been neutralized. All remaining students and staff left in the building please evacuated now.'\
+        description: "<br>After an unknown amount of time you hear a loud announcement 'This is an all clear call, the shooter has been neutralized. All remaining students and staff left in the building please evacuated now.'\
          You make your way to the police blockade. They ask you if you're okay and what you know about what happened. \
         They sit you down and let the shock wear off. You are given the numbers of trauma counselors and websites to help deal with what just happened.",
     //list of helpful resources??? 
@@ -184,14 +184,14 @@ rooms = {
     use: {
         name: "<h2><b>Using a weapon</b></h2>", //default is unarmed
         image: "fight",
-        description: "<br>You leap out and attack the shooter catching them off guard. Around you other students jump up and help disarm the shooter. Unless you have no other choice, do not approach the shooter and if appraoched by shooter comply with the shooter's instructions.",
+        description: "<br>You leap out and attack the shooter catching them off guard. Around you other students jump up and help disarm the shooter. Unless you have no other choice, do not approach the shooter, and if approached by them comply with the shooter's instructions.",
         exitKeys: ["finish2"],
         exitTexts: ["It's over..."]
     },
     finish: {
         name: "<h2><b>Police.</b></h2>",
         image: "police",
-        description: "<br>You make your way to the police blockade. When law enforcment reaches you, do not run or make any sudden movements and wait for their instruction. They ask you if you're okay and what you know about what happened. \
+        description: "<br>You make your way to the police blockade. When law enforcement reaches you, do not run or make any sudden movements and wait for their instruction. They ask you if you're okay and what you know about what happened. \
         They sit you down and let the shock wear off. You are given the numbers of trauma counselors and websites to help deal with what just happened.",
     //list of helpful resources??? 
         linkTexts: ["The NCTSN (National Child Traumatic Stress Network) helps provide resources for parents and caregivers on how to help their children get through the aftermath of traumatic events such as school shootings.", "The \
@@ -207,7 +207,7 @@ rooms = {
         name: "<h2><b>Police.</b></h2>",
         image: "finish2",
         description: "<br>While you and other students keep the shooter incapacitated another calls the police. They storm the building and quickly \
-        find your class room. Law enforcment will need to identify that you are not the shooter, be quiet and compliant. 'We can take it from here.' They say, gesturing for you all to leave.",
+        find your class room. Law enforcement will need to identify that you are not the shooter, be quiet and compliant. 'We can take it from here.' They say, gesturing for you all to leave.",
         exitKeys: ["finish"],
         exitTexts: ["You make your way out..."] 
     },
